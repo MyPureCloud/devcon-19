@@ -1,0 +1,82 @@
+<html>
+
+<head>
+  <title>PureCloud Chat API Project</title>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <!-- PureCloud Guest Chat SDK -->
+  <script src="https://sdk-cdn.mypurecloud.com/javascript-guest/5.0.0/purecloud-guest-chat-client.min.js"></script>
+
+  <!-- Custom scripts -->
+  <script src="ui-helpers.js"></script>
+  <script src="purecloud-apis.js"></script>
+
+  <!-- Custom styles -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container-fluid">
+      <h1 class="display-4">PureCloud Chat API Project</h1>
+      <p class="lead">Build the guest chat UI from scratch using the PureCloud APIs!</p>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm">
+        <!-- Chat config -->
+        <h1>Chat Data</h1>
+        <div class="form-group">
+          <label for="chat-data-firstname">First Name</label>
+          <input type="text" class="chat-form-element form-control" id="chat-data-firstname" placeholder="Praenomen">
+        </div>
+        <div class="form-group">
+          <label for="chat-data-lastname">Last Name</label>
+          <input type="text" class="chat-form-element form-control" id="chat-data-lastname" placeholder="Gens">
+        </div>
+        <div class="form-group">
+          <label for="chat-data-email">Email address</label>
+          <input type="email" class="chat-form-element form-control" id="chat-data-email" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+          <label for="chat-data-accountnumber">Account Number</label>
+          <input type="text" class="chat-form-element form-control" id="chat-data-accountnumber" placeholder="ABC1234">
+        </div>
+        <button id="button-start-chat" type="submit" class="btn btn-primary">Start Chat</button>
+        <button id="button-end-chat" type="submit" class="btn btn-secondary" disabled="true">End Chat</button>
+        <!-- [END] Chat config -->
+      </div>
+      <div class="col-sm">
+        <!-- Chat window -->
+        <div class="chat-content">
+          <div class="card">
+            <div class="card-header">
+              <strong>WebChat</strong>
+            </div>
+            <ul id="chat-messages" class="list-group list-group-flush"></ul>
+            <div class="card-footer">
+              <span id="typing-indicator"></span>
+              <input type="text" class="form-control" id="chat-message"
+                placeholder="Type a message and press enter to send">
+            </div>
+          </div>
+        </div>
+        <!-- [END] Chat window -->
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
