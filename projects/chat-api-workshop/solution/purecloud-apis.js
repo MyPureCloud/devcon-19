@@ -2,6 +2,9 @@
 const platformClient = require('platformClient');
 const client = platformClient.ApiClient.instance;
 
+// Select PureCloud environment
+client.setEnvironment('mypurecloud.com');
+
 // Create API instance
 const webChatApi = new platformClient.WebChatApi();
 
