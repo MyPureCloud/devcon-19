@@ -1,0 +1,31 @@
+/*** General UI styles ***/
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12pt;
+}
+
+.jumbotron {
+  background-color: #6B7178;
+  color: #FFFFFF;
+}
+
+
+
+/*** Chat window styles ***/
+
+#chat-messages {
+  height: 600px;
+  overflow-y: scroll;
+}
+
+#typing-indicator {
+  font-size: 10pt;
+  font-style: italic;
+}
+
+.member-image{
+  max-height: 35px;
+  border-radius: 35px;
+  margin-right: 5px;
+}

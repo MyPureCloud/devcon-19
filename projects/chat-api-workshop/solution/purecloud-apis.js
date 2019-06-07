@@ -1,4 +1,6 @@
 /* globals getUserInput disableForm addUiMessage prepopulateUserInput */
+
+// Get SDK reference
 const platformClient = require('platformClient');
 const client = platformClient.ApiClient.instance;
 
@@ -21,6 +23,8 @@ let typingIndicatorTimer;
 const memberCache = {};
 
 
+
+// Actions when page is loaded
 $(document).ready(() => {
 	// Load data into the UI so you don't have to type it every time
 	prepopulateUserInput();
