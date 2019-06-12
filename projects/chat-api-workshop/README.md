@@ -15,6 +15,10 @@ The unsolved student project is located in the `project` directory.
 * [jQuery](https://api.jquery.com/)
 * [Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/introduction/)
 
+#### If you need a PureCloud account
+
+Sign up using this link and let the instructor know your name to add permissions: https://apps.mypurecloud.com/signup/?invite=95851efe-b51c-4a47-9547-7ed27e21f94a
+
 ### Requirements
 
 1. Collect user input from the UI
