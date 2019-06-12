@@ -11,9 +11,9 @@ client.setEnvironment('mypurecloud.com');
 const webChatApi = new platformClient.WebChatApi();
 
 // Static values used by chat
-const ORGANIZATION_ID = 'YOUR-ORG-ID';
-const DEPLOYMENT_ID = 'YOUR-DEPLOYMENT-ID';
-const QUEUE_NAME = 'YOUR-QUEUE-NAME';
+const ORGANIZATION_ID = '3257d48c-6029-4b09-be3f-8b2123b0196c';
+const DEPLOYMENT_ID = '68867be0-78de-4a52-918a-247fbd211a1e';
+const QUEUE_NAME = 'Chat';
 const GUEST_IMAGE = 'https://i.imgur.com/NDHLXG7.jpg';
 
 // Chat variables
